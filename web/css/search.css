@@ -1,0 +1,87 @@
+@CHARSET "UTF-8";
+body, td {
+	font-family: verdana, helvetica, arial, sans-serif;
+	font-size: 10pt;
+}
+
+h1 {
+	text-align: center;
+	letter-spacing: 10px;
+	font-stretch: extra-expanded;
+}
+
+td {
+	vertical-align: top;
+}
+
+#meter-01 {
+  display: block;
+}
+
+#meter-07, #lejtes-02, #lejtes-01-02, #lejtes-02-02 {
+  display: none;
+}
+
+fieldset {
+	border: 0;
+	border: 1px solid #ccc;
+	margin-left: 60px;
+	background-color: #fafafa;
+}
+
+fieldset legend, .fieldName {
+	color: navy;
+}
+
+.fieldName {
+	font-weight: bold;
+}
+
+fieldset legend {
+	border: 1px solid #ccc;
+	background-color: white;
+}
+
+p#changeLocale {
+	width: 40%;
+	margin-left: 30%;
+	border-bottom: 1px solid navy;
+	padding-bottom: 2px;
+	border-top: 1px solid navy;
+	text-align: center;
+}
+
+p#changeLocale a {
+	text-decoration: none;
+}
+
+#languageSelection {
+	float: left;
+}
+
+#results div {
+	margin-top: 10px;
+}
+
+#results div a {
+	font-weight: bold;
+}
+
+ul#selectors {
+	border-bottom: solid black thin;
+	border-top: solid black thin;
+}
+
+ul#selectors li {
+	list-style-position: inside;
+	list-style-type: none;
+	display: inline;
+	border: solid black thin;
+	padding: 3px;
+	cursor: pointer;
+}
+
+#query {
+	color: maroon;
+	font-weight: bold;
+}

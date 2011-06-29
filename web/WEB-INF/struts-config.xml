@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+	<data-sources />
+	<form-beans>
+		<form-bean name="searchForm" type="org.kirunews.struts.form.SearchForm" />
+		<form-bean name="changeLocaleForm" type="org.kirunews.struts.form.ChangeLocaleForm" />
+	</form-beans>
+	<global-exceptions />
+	<global-forwards />
+	<action-mappings>
+		<action attribute="searchForm" input="/form/search.jsp" name="searchForm"
+			path="/search" scope="request" 
+			type="org.kirunews.struts.action.SearchAction">
+			<forward name="result" path="result.jsp" redirect="true" />
+		</action>
+		<action attribute="changeLocaleForm" input="/form/changeLocale.jsp"
+			name="changeLocaleForm" path="/changeLocale" scope="request"
+			type="org.kirunews.struts.action.ChangeLocaleAction" />
+	</action-mappings>
+	<message-resources parameter="org.kirunews.struts.ApplicationResources" />
+</struts-config>
+
